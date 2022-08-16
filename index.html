@@ -15,6 +15,26 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
+	
+	
+	<!-- AGE & YEAR OPERATIONS -->
+	<script>
+		var year=new Date().getFullYear();
+		var month=new Date().getMonth() + 1;
+		var day=new Date().getDate();
+		var age;
+			
+		if (month > 1){
+					
+			age = year - 1997;
+		}else{
+			if (month == 1 && day > 24){
+				age = year - 1997;
+			}else{
+				age = year - 1998;
+			}
+		}
+	</script>
     
 <!--
 
@@ -86,16 +106,7 @@ https://www.tooplate.com/view/2115-marvel
                                 </div>
                         </h1>
 						
-						<!-- <div id="current_date"></p>
-							<script>
-								year = date.getFullYear();
-								month = date.getMonth() + 1;
-								day = date.getDate();
-								if ( 2
-							</script>
-						</div> -->
-						
-                        <p>Tengo 25 años, actualmente me encuentro cursando un Grado en Ingeniería Mecánica en la Universidad Politécnica de Madrid.<br><br>Soy una persona constante y extrovertida, tengo facilidad para aprender (sobre todo con las cosas que me apasionan) y he adquirido bastante experiencia durante los últimos 8 años sobre la estructura y gestión de las empresas, así como acerca de la exposición oral y las reuniones.</p>
+                        <p>Tengo <script>document.write(age)</script> años, actualmente me encuentro cursando un Grado en Ingeniería Mecánica en la Universidad Politécnica de Madrid.<br><br>Soy una persona constante y extrovertida, tengo facilidad para aprender (sobre todo con las cosas que me apasionan) y he adquirido bastante experiencia durante los últimos 8 años sobre la estructura y gestión de las empresas, así como acerca de la exposición oral y las reuniones.</p>
                         
                         <div class="custom-btn-group mt-4">
                           <a href="pdf/R.Alferez-Curriculum.pdf" target="_blank" rel="noopener noreferrer" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Descargar versión PDF</a>
@@ -166,7 +177,55 @@ https://www.tooplate.com/view/2115-marvel
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
         <div class="container">
             <div class="row">
+				
+				<div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Estudios</h2>
 
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2023</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Grado en Ingeniería Mecánica por la Universidad Politécnica de Madrid</span><small></small></h3>
+                                  <p>Estudios cursados en la Escuela Técnica Superior de Ingeniería y Diseño Industrial de la Universidad Politécnica de Madrid.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Bachillerato en Centro Salesiano Santo Domingo Savio</span><small></small></h3>
+                                <p>Estudios de bachillerato de ciencias con especialidades tecnológicas en el Centro Salesiano Santo Domingo Savio.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2013</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Educación Secundaria Obligatoria en Centro Salesiano Santo Domingo Savio</span><small></small></h3>
+                                <p>Estudios de secundaria con especialidad en ciencias en el Centro Salesiano Santo Domingo Savio.</p>
+                            </div>
+						</div>
+							
+						<div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2009</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Educación Primaria en Centro Torres Quevedo</span><small></small></h3>
+                                <p>Estudios de educación infantil y primaria en el Centro Torres Quevedo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+					
+				</div>
+				
                 <div class="col-lg-6 col-12">
                   <h2 class="mb-4">Experiencia</h2>
 
@@ -276,52 +335,10 @@ https://www.tooplate.com/view/2115-marvel
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Estudios</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2023</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Grado en Ingeniería Mecánica por la Universidad Politécnica de Madrid</span><small></small></h3>
-                                  <p>Estudios cursados en la Escuela Técnica Superior de Ingeniería y Diseño Industrial de la Universidad Politécnica de Madrid.</p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2015</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Bachillerato en Centro Salesiano Santo Domingo Savio</span><small></small></h3>
-                                <p>Estudios de bachillerato de ciencias con especialidades tecnológicas en el Centro Salesiano Santo Domingo Savio.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2013</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Educación Secundaria Obligatoria en Centro Salesiano Santo Domingo Savio</span><small></small></h3>
-                                <p>Estudios de secundaria con especialidad en ciencias en el Centro Salesiano Santo Domingo Savio.</p>
-                            </div>
-						</div>
-							
-						<div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2009</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Educación Primaria en Centro Torres Quevedo</span><small></small></h3>
-                                <p>Estudios de educación infantil y primaria en el Centro Torres Quevedo.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                
+            </div>
+			
+		</div>
 				
 				<!-- <div class="col-lg-6 col-12">
                   <h2 class="mb-4 mobile-mt-2">Otras habilidades</h2>
@@ -368,49 +385,49 @@ https://www.tooplate.com/view/2115-marvel
                         </div>
 
                     </div>
-                </div> -->
+                </div>
                 
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- HABILIDADES -->
     <section class="abilities full-screen d-lg-flex justify-content-center align-items-center" id="abilities">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                <div class="col-lg-8 col-md-12 col-12 d-flex align-items-center">
                     <div class="about-text">
-                       <h2 class="mb-4">Habilidades</h2>
-                        <p>Además de los conocimientos adquiridos por mis estudios, he adquirido las siguientes habilidades de manera autodidacta a lo largo de estos años las cuales me han demostrado ser de gran utilidad:</p><br><br><br>
-						
-						<ul>
-							<li>Edición fotográfica en Photoshop</li>
-							<li>Edición de vídeo en Sony Vegas</li>
-							<li>Conocimientos varios sobre audio digital</li>
-							<li>Amplios conocimientos sobre hardware informático</li>
-							<li>Nociones sobre ADB y FastBoot en Android</li>
-							<li>Conocimiento básico de programación</li>
-							<li>Speedcuber participando en competiciones oficiales desde 2015</li>
-						</ul>
-                 
+                       <center><h2 class="mb-4">Habilidades</h2></center>
+                        <p>Además de los conocimientos adquiridos por mis estudios, he adquirido las siguientes habilidades de manera autodidacta a lo largo de estos años las cuales me han demostrado ser de gran utilidad:</p>
+					<div class="row d-flex	justify-content-center">
+						<i><p style="font-size:125%;">
+							<br>•	Edición fotográfica en Photoshop
+							<br>•	Edición de vídeo en Sony Vegas
+							<br>•	Conocimientos varios sobre audio digital
+							<br>•	Amplios conocimientos sobre hardware informático
+							<br>•	Nociones sobre ADB y FastBoot en Android
+							<br>•	Conocimiento básico de programación
+							<br>•	Speedcuber participando en competiciones oficiales desde 2015
+						</p></i>
+					</div>
                     </div>
                 </div>
 
-                <div class="col-lg-5 col-md-12 col-12">
+                <!--<div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image png">
                         <img src="images/undraw/icons2.png" class="img-fluid" alt="png image">
                     </div>
-                </div>
+                </div><-->
 
             </div>
         </div>
     </section>
 	
 	<!-- REDES -->
-    <center><section class="contact py-5 full-screen d-lg-flex justify-content-center align-items-center" id="contact">
+    <section class="contact py-5 full-screen d-lg-flex justify-content-center align-items-center" id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
 
             <div class="contact-info d-flex justify-content-center align-items-center py-4 px-lg-5">
                 <div class="contact-info-item">
@@ -420,13 +437,13 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
 
                 <ul class="social-links">
-                     <br><li><img src="images/undraw/twitter.png" class="img-fluid" width="18" height="18"></li><br>
+                     <br><br><li><img src="images/undraw/twitter.png" class="img-fluid" width="18" height="18"></li><br>
                      <li><img src="images/undraw/youtube.png" class="img-fluid" width="18" height="18"></li>
                 </ul>
             </div>
         </div>
        </div>
-    </section></center>
+    </section>
 
     <!-- PIE DE PÁGINA -->
      <footer class="footer py-5">
@@ -434,7 +451,7 @@ https://www.tooplate.com/view/2115-marvel
                <div class="row">
 
                     <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Copyright &copy; 2022 Rafael Alférez. Todos los derechos reservados</p>
+                        <p class="copyright-text text-center">Copyright &copy; <script>document.write(year)</script> Rafael Alférez. Todos los derechos reservados.</p>
                         <p class="copyright-text text-center">Diseño original de <a rel="nofollow" href="https://www.facebook.com/tooplate" target="_blank" rel="noopener noreferrer">Tooplate</a></p>
                     </div>
                     
